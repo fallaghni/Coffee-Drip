@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Drip Munjul</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Abu-abu sangat terang */
+        }
+        .gambar-placeholder {
+            background-color: #cccccc; /* Abu-abu untuk gambar */
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Coffee Drip</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuUtama">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero (Abu-abu gelap) -->
+    <header id="home" class="bg-secondary text-white text-center py-5">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Coffee Drip Munjul</h1>
+            <p class="lead mt-3">Secangkir ketenangan</p>
+            <a href="#menu" class="btn btn-dark mt-4 px-4 py-2">Lihat Menu Kami</a>
+        </div>
+    </header>
+
+    <!-- Tentang Kami (Putih) -->
+    <section id="tentang" class="py-5 bg-white text-dark">
+        <div class="container text-center py-4">
+            <h2 class="fw-bold mb-4">Tentang Kami</h2>
+            <p class="text-secondary mx-auto" style="max-width: 700px;">
+                Coffee Drip Munjul adalah kedai kopi sederhana yang berfokus pada teknik seduh manual (manual brew). Kami menggunakan biji kopi pilihan untuk menghadirkan rasa otentik yang pas untuk menemani hari Anda.
+            </p>
+        </div>
+    </section>
+
+    <!-- Menu (Abu-abu terang) -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container py-4">
+            <h2 class="text-center fw-bold mb-5">Menu Andalan</h2>
+            <div class="row g-4">
+                
+                <!-- Card Menu 1 -->
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100 text-center border-0">
+                        <div class="card-body py-4">
+                            <i class="bi bi-cup-hot fs-1 text-secondary mb-3"></i>
+                            <h5 class="card-title">V60 Manual Brew</h5>
+                            <p class="card-text text-light">Kopi hitam seduh manual yang ringan dan aromatik.</p>
+                            <span class="badge bg-secondary fs-6">Rp 25.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Menu 2 -->
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100 text-center border-0">
+                        <div class="card-body py-4">
+                            <i class="bi bi-cup fs-1 text-secondary mb-3"></i>
+                            <h5 class="card-title">Classic Americano</h5>
+                            <p class="card-text text-light">Espresso pekat dipadu dengan air murni.</p>
+                            <span class="badge bg-secondary fs-6">Rp 20.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Menu 3 -->
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white h-100 text-center border-0">
+                        <div class="card-body py-4">
+                            <i class="bi bi-cup-hot-fill fs-1 text-secondary mb-3"></i>
+                            <h5 class="card-title">Kopi Susu Aren</h5>
+                            <p class="card-text text-light">Espresso, susu, dan manisnya gula aren asli.</p>
+                            <span class="badge bg-secondary fs-6">Rp 22.000</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section (Abu-abu Gelap) -->
+    <!-- Struktur form dan info kontak ini diadaptasi dari struktur proyek "promnet" -->
+    <section id="kontak" class="py-5 bg-secondary text-white">
+        <div class="container py-4">
+            <h2 class="text-center fw-bold mb-3">Hubungi Kami</h2>
+            <p class="text-center text-light mb-5">Apakah Anda memiliki pertanyaan terkait pesanan atau reservasi? Silakan kirimkan pesan kepada kami melalui formulir di bawah ini.</p>
+            
+            <div class="row g-5">
+                <!-- Informasi Kontak -->
+                <div class="col-md-5">
+                    <h3 class="mb-4">Informasi Kontak</h3>
+                    <p><strong>Email:</strong> info@coffeedrip.com</p>
+                    <p><strong>Telepon:</strong> +62 822 4034 0060</p>
+                    <p><strong>Alamat:</strong> Jl. Munjul Raya No. 99, Purwakarta</p>
+                </div>
+                
+                <!-- Formulir Kontak -->
+                <div class="col-md-7">
+                    <form class="bg-dark p-4 rounded" id="formPesan">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Alamat Email / WhatsApp</label>
+                            <input type="text" class="form-control" id="email" placeholder="Masukkan kontak Anda">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Tuliskan pesan Anda di sini" required></textarea>
+                        </div>
+                        <button type="button" class="btn btn-secondary w-100" onclick="kirimPesan()">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Hitam murni) -->
+    <footer class="bg-dark text-white text-center py-4 border-top border-secondary">
+        <small>&copy; 2026 Coffee Drip Munjul. All Rights Reserved.</small>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- SweetAlert2 untuk notifikasi -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Script Sederhana -->
+    <script>
+        function kirimPesan() {
+            // Ambil data dari form
+            let nama = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let pesan = document.getElementById("message").value;
+
+            // Pengecekan form kosong
+            if (nama === "" || email === "" || pesan === "") {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Semua kolom form harus diisi!",
+                    confirmButtonColor: "#343a40" // warna gelap
+                });
+            } else {
+                Swal.fire({
+                    icon: "success",
+                    title: "Berhasil Terkirim!",
+                    text: "Terima kasih " + nama + ", pesan Anda sudah kami terima.",
+                    confirmButtonColor: "#6c757d" // warna abu-abu
+                });
+
+                // Kosongkan form setelah berhasil
+                document.getElementById("formPesan").reset();
+            }
+        }
+    </script>
+</body>
+</html>
